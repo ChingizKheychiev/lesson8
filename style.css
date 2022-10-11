@@ -1,0 +1,310 @@
+html,
+body {
+  margin: 0px;
+  height: 100%;
+  font-family: "Poppins", sans-serif;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  background-color: #161b22;
+  color: aliceblue;
+  height: 7%;
+  margin: 0 -5px;
+}
+
+.header-left {
+  display: flex;
+  color: aliceblue;
+  margin-left: 400px;
+}
+.header-left p {
+  margin: 20px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.header-left p:hover {
+  color: aqua;
+}
+
+.image {
+  width: 70px;
+  height: 70px;
+}
+.header-right {
+  display: flex;
+  font-size: 20px;
+  margin-left: -300px;
+}
+
+.header-right p {
+  margin: 20px;
+  cursor: pointer;
+}
+
+.header-right p:hover {
+  color: aqua;
+}
+
+.headerinput {
+  border-radius: 5px;
+  height: 30px;
+  background: #3b3b3b;
+  color: white;
+  padding-left: 12px;
+  padding-right: 12px;
+  font-size: 20px;
+  margin-top: 15px;
+  border: none;
+  box-shadow: 0 0 0 0.2rem rgba(158, 158, 158, 0.25);
+  outline: none;
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+  background-color: #21262c;
+  height: 70%;
+}
+
+.main-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
+}
+
+.main-text h1 {
+  font-size: 50px;
+  margin: 15px;
+  color: white;
+}
+
+.main-text p {
+  font-size: 25px;
+  margin: 15px;
+  color: #646464;
+}
+
+.main-box {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  font-size: 20px;
+  padding: 30px;
+  margin: 100px;
+  border-radius: 10px;
+  width: 400px;
+}
+
+.main-box ::placeholder {
+  font-size: 18px;
+}
+
+.fontmainbox {
+  font-size: 15px;
+  text-align: center;
+}
+
+.main-box p {
+  margin-bottom: 5px;
+}
+
+.main-box input {
+  border-radius: 5px;
+  border: 1px solid #929292;
+  height: 50px;
+  padding: 5px 0 5px 10px;
+}
+
+.main-box input:focus {
+  border: none;
+  box-shadow: 0 0 0 0.2rem rgba(158, 158, 158, 0.25);
+  outline: none;
+}
+
+.main-box button {
+  margin: 20px;
+  background-color: rgb(43, 185, 69);
+  border: none;
+  border-radius: 8px;
+  color: white;
+  font-size: 20px;
+  font-weight: bolder;
+  height: 100px;
+  cursor: pointer;
+}
+
+.main-box button:hover {
+  box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.25);
+  color: aqua;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 23%;
+}
+
+.footer Github for {
+  font-size: 20px;
+  margin: 1px;
+}
+
+.footer h2 {
+  font-size: 40px;
+  margin: 1px;
+}
+
+.footer p {
+  font-size: 20px;
+  margin: 20px;
+}
+
+.footer button {
+  margin: 15px;
+  color: rgb(53, 53, 199);
+  font-size: 20px;
+  font-weight: bolder;
+  background: none;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+
+  margin-top: 0px;
+  cursor: pointer;
+  padding: 10px 30px;
+  text-align: center;
+}
+
+.footer button:hover {
+  box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.25);
+  color: aqua;
+}
+
+.colortext {
+  color: white;
+  cursor: pointer;
+}
+
+.colortext:hover {
+  color: aqua;
+}
+
+.clr {
+  color: rgb(0, 13, 196);
+  cursor: pointer;
+}
+
+/* .nav-btn {
+  border-bottom: 17px double rgb(255, 255, 255);
+  border-top: 6px solid rgb(255, 255, 255);
+  content: "";
+  height: 5px;
+  width: 30px;*/
+
+/*@media screen and (min-width: 1025px) and (max-width: 10000xp) {
+  .nav-btn {
+    display: none;
+  }
+}*/
+
+@media screen and (min-width: 700px) and (max-width: 1024px) {
+  .header-left p {
+    display: none;
+  }
+
+  .header-left {
+    margin: 0px;
+  }
+
+  /* .main-text {
+    display: none;
+  } */
+
+  #text1 {
+    display: none;
+  }
+
+  #text2 {
+    display: none;
+  }
+
+  .main {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .headerinput {
+    display: none;
+  }
+
+  .header-right p {
+    display: none;
+  }
+
+  .nav-btn {
+    border-bottom: 17px double rgb(255, 255, 255);
+    border-top: 6px solid rgb(255, 255, 255);
+    height: 5px;
+    width: 30px;
+    margin: 20px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .main {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .header {
+    width: 520px;
+  }
+
+  .main {
+    width: 520px;
+  }
+
+  .main-box {
+    background-color: #21262c;
+    margin: 25px;
+  }
+
+  .main-box p,
+  input {
+    display: none;
+  }
+
+  .header-left p {
+    display: none;
+  }
+
+  .header-right p,
+  input {
+    display: none;
+  }
+
+  .header-left {
+    margin: 0px;
+  }
+
+  .main-text {
+    text-align: center;
+  }
+
+  .nav-btn {
+    border-bottom: 17px double rgb(255, 255, 255);
+    border-top: 6px solid rgb(255, 255, 255);
+    content: "";
+    height: 5px;
+    width: 30px;
+    margin: 20px;
+  }
+  .footer {
+    text-align: center;
+    height: 150px;
+  }
+}
